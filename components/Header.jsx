@@ -27,7 +27,7 @@ export default function Header() {
             className="menu menu-md dropdown-content bg-gray-100 font-medium mt-3 z-[1] px-2 py-3 shadow-lg border rounded-box w-52"
           >
             <li>
-              <Link href="/privacy-policy-result">Last policy</Link>
+              <Link href="/privacy-policy-result">My last policy</Link>
             </li>
           </ul>
         </div>
@@ -35,7 +35,7 @@ export default function Header() {
       <div className="navbar-end">
         <Link href="/" className="font-semibold">
           <div>
-            <h3 className="text-lg font-bold">starter app</h3>
+            <h3 className="text-lg font-bold">Privacy Policy Generator</h3>
           </div>
         </Link>
       </div>

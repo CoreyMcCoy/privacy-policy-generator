@@ -6,9 +6,9 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Next.js 15 Starter App',
+  title: 'Privacy Policy Generator',
   description:
-    'A starter template for Next.js 15 applications with Tailwind CSS and more.',
+    'Generate a comprehensive privacy policy for your website or app with ease. Customize it to fit your specific needs and ensure compliance with privacy regulations.',
 };
 
 export default function RootLayout({ children }) {
