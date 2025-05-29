@@ -52,9 +52,9 @@ const PrivacyPolicyGeneratorPage = () => {
       try {
         const result = await generatePrivacyPolicy(answers);
         if (result.success) {
-          // Store the policy and answers in sessionStorage
-          sessionStorage.setItem('generatedPolicy', result.policy);
-          sessionStorage.setItem('policyAnswers', JSON.stringify(answers));
+          // Store the policy and answers in localStorage
+          localStorage.setItem('generatedPolicy', result.policy);
+          localStorage.setItem('policyAnswers', JSON.stringify(answers));
 
           // Redirect to the policy display page
           router.push('/privacy-policy-result');

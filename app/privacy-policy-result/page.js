@@ -14,9 +14,9 @@ export default function PrivacyPolicyResultPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Get the policy from sessionStorage
-    const storedPolicy = sessionStorage.getItem('generatedPolicy');
-    const storedAnswers = sessionStorage.getItem('policyAnswers');
+    // Get the policy from localStorage
+    const storedPolicy = localStorage.getItem('generatedPolicy');
+    const storedAnswers = localStorage.getItem('policyAnswers');
 
     if (storedPolicy) {
       setPolicy(storedPolicy);
