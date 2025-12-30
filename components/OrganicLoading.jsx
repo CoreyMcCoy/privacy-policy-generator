@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react';
+"use client";
+
+import React, { useState, useEffect } from "react";
 
 export default function OrganicLoading() {
   const [particles, setParticles] = useState([]);
@@ -62,7 +64,7 @@ export default function OrganicLoading() {
   }, [particles]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-amber-50 to-indigo-100 flex items-center justify-center relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-gray-100 via-slate-50 to-slate-100 flex flex-col items-center justify-start pt-[30vh] relative overflow-hidden">
       {/* Floating particles */}
       {particles.map((particle) => (
         <div
@@ -74,8 +76,8 @@ export default function OrganicLoading() {
             width: `${particle.size}px`,
             height: `${particle.size}px`,
             opacity: particle.opacity,
-            transform: 'translate(-50%, -50%)',
-            transition: 'all 0.1s ease-out',
+            transform: "translate(-50%, -50%)",
+            transition: "all 0.1s ease-out",
           }}
         />
       ))}
@@ -99,29 +101,29 @@ export default function OrganicLoading() {
 
       {/* Central breathing element */}
       <div className="relative z-10">
-        <div className="w-24 h-24 rounded-full bg-gradient-to-br from-amber-200 via-blue-200 to-indigo-300 shadow-2xl animate-pulse relative">
+        <div className="w-24 h-24 rounded-full bg-gradient-to-br from-gray-300 via-slate-500 to-gry-400 shadow-2xl animate-pulse relative">
           {/* Inner glow */}
-          <div className="absolute inset-2 rounded-full bg-gradient-to-br from-amber-100 via-blue-100 to-indigo-200 animate-ping opacity-75" />
+          <div className="absolute inset-2 rounded-full bg-gradient-to-br from-slate-100 via-slate-200 to-slate-300 animate-ping opacity-75" />
 
           {/* Core */}
-          <div className="absolute inset-4 rounded-full bg-gradient-to-br from-amber-50 via-blue-50 to-indigo-100 shadow-inner" />
+          <div className="absolute inset-4 rounded-full bg-gradient-to-br from-slate-50 via-slate-50 to-slate-100 shadow-inner" />
         </div>
 
         {/* Ripple effects */}
-        <div className="absolute inset-0 rounded-full border-2 border-blue-300 animate-ping opacity-30" />
+        <div className="absolute inset-0 rounded-full border-2 border-slate-300 animate-ping opacity-30" />
         <div
-          className="absolute inset-[-8px] rounded-full border border-indigo-200 animate-ping opacity-20"
-          style={{ animationDelay: '0.5s' }}
+          className="absolute inset-[-8px] rounded-full border border-slate-200 animate-ping opacity-20"
+          style={{ animationDelay: "0.5s" }}
         />
         <div
-          className="absolute inset-[-16px] rounded-full border border-amber-200 animate-ping opacity-10"
-          style={{ animationDelay: '1s' }}
+          className="absolute inset-[-16px] rounded-full border border-slate-200 animate-ping opacity-10"
+          style={{ animationDelay: "1s" }}
         />
       </div>
 
       {/* Loading text */}
-      <div className="absolute bottom-1/3 left-1/2 transform -translate-x-1/2">
-        <p className="text-indigo-600 font-light text-lg tracking-wide animate-pulse">
+      <div className="mt-12 z-10">
+        <p className="text-slate-600 font-light text-lg tracking-wide animate-pulse">
           Loading
         </p>
       </div>
